@@ -9,12 +9,7 @@ https://www.nuget.org/packages/CAD.Documents/
 ----------------------------------------------------------------
 NuGet Dependencies:
 
-Json.Net
-DocX
-HtmlAgilityPack
-iTextSharp
-iTextSharp XML Worker
-OpenXml Power Tools
+Json.Net, DocX, HtmlAgilityPack, iTextSharp, iTextSharp XML Worker, OpenXml Power Tools
 ---------------------------------------------------------
 
 Namespace: CAD.Core.Tools
