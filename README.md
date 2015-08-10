@@ -17,12 +17,10 @@ Namespace: CAD.Core.Tools
 Usage:
 
 var textToReplace = new Dictionary<string,string>();
-
 //replaces any text from doc file enclosed with {}.. example: {Firstname}
 //default format {*}
 //this is optional
 var textToReplaceFormat = "{{*}}"; 
-
 var docFile = "C:\test.doc";
 var pdfFile = "C:\test.pdf";
 var htmlFile = "C:\test.html";
@@ -44,4 +42,3 @@ DocTools.PdfManager.ConvertFromHtml(htmlFile,pdfFile);
 
 //convert doc to html
 DocTools.XmlManager.ConvertWordToHtml(docFile,htmlFile);
-
