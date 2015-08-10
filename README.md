@@ -16,9 +16,9 @@ Usage:<br />
 var textToReplace = new Dictionary<string,string>();<br />
 <br />
 //replaces any text from doc file enclosed with {}.. example: {Firstname}<br />
-//default format {*}<br />
+//default format {\*}<br />
 //this is optional<br />
-var textToReplaceFormat = "{{*}}"; <br />
+var textToReplaceFormat = "{{\*}}"; <br />
 var docFile = "C:\test.doc";<br />
 var pdfFile = "C:\test.pdf";<br />
 var htmlFile = "C:\test.html";<br />
