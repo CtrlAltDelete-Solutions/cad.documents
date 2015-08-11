@@ -7,11 +7,11 @@ using CAD.Core;
 
 namespace CAD.Core.Tools
 {
-    public class DefaultDocTools
+    public sealed class DefaultDocTools
     {
-        private static Lazy<IWordManager> _wordManager = new Lazy<IWordManager>(() => new WordManager(new DocXWordProcessor(), DefaultDocTools.XmlManager, DefaultDocTools.PdfManager));
-        private static Lazy<IPdfManager> _pdfManager = new Lazy<IPdfManager>(() => new PdfManager(new iTextSharperPdfProcessor(), new HtmlAgilityPackParser()));
-        private static Lazy<IXmlManager> _xmlManager = new Lazy<IXmlManager>(() => new XmlManager(new OpenXMLPowerToolsXmlProcessor()));
+        private static readonly Lazy<IWordManager> _wordManager = new Lazy<IWordManager>(() => new WordManager(new DocXWordProcessor(), DefaultDocTools.XmlManager, DefaultDocTools.PdfManager));
+        private static readonly Lazy<IPdfManager> _pdfManager = new Lazy<IPdfManager>(() => new PdfManager(new iTextSharperPdfProcessor(), new HtmlAgilityPackParser()));
+        private static readonly Lazy<IXmlManager> _xmlManager = new Lazy<IXmlManager>(() => new XmlManager(new OpenXMLPowerToolsXmlProcessor()));
 
         public static IWordManager WordManager
         {
@@ -34,7 +34,10 @@ namespace CAD.Core.Tools
             get
             {
                 return _xmlManager.Value;
+                
             }
         }
+
+        
     }
 }
