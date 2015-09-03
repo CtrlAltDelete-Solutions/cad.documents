@@ -10,7 +10,7 @@
     <projectUrl>https://github.com/CtrlAltDelete-Solutions/cad.documents</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>updated DocX</releaseNotes>
+    <releaseNotes>Downgraded to use .Net 4.5</releaseNotes>
     <copyright>Copyright @ CtrlALtDelete Solutions 2015</copyright>
   </metadata>
 </package>
